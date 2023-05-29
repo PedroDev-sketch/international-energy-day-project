@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+        <a href="../index.html" class="housebox">
+            <img class="houseicon" src="../images/houseicon.png">
+        </a>
+        <a class="menu-item" href="./contato.html">Contato</a>
+        <button id="myBtn" class="menu-item btndec">Doações</button>
+        <a class="menu-item" href="./eventos.html">Eventos</a>
+        <a class="menu-item" href="./maissobre.html">Mais sobre</a>
+    </header>
+    <main>
+        <h1 class="eventtitle firstelementevent">Próximos Eventos</h1>
+        <section class="event current">
+            <div class="eventtopbox">
+                <img class="eventimg" src="../images/itaipu.jfif">
+                <p class="eventdate">Data: <br>22/05</p>
+            </div>
+            <h2 class="eventtext">Viagem de Campo</h2>
+            <p class="eventtext">Esse evento envolve uma viagem à usina hidrelétrica de itaipu, uma das maiores do mundo, lá estudaremos o funcionamento da usina e seus impactos ambientais. Uma grande oportunidade de aprendizado com os melhores do Brasil na área.</p>
+            <button class="subscribebutton">
+                <a href="inscricao.html">Inscrição</a>
+            </button>
+        </section>
+        <section class="event research">
+            <div class="eventtopbox">
+                <img class="eventimg second" src="../images/laboratorioevento.jpg">
+                <p class="eventdate">Data: <br>14/08</p>
+            </div>
+            <h2 class="eventtext">Pesquisa de Eficiência</h2>
+            <p class="eventtext">Iremos nos reunir na sede de pesquisa Albert Einstein para pesquisar sobre as diferenças de eficiência e custo-benefício de cada um dos tipos de energia renovável, trazendo grande aprendizado para todos presente. No final do evento, você levará um certificado de conclusão.</p>
+            <button class="subscribebutton">
+                <a href="inscricao.html">Inscrição</a>
+            </button>
+        </section>
+        <section class="event seminary lastelement">
+            <div class="eventtopbox">
+                <img class="eventimg third" src="../images/TEATRO-AMAZONAS-EVENTO1.jpeg">
+                <p class="eventdate">Data: <br>9/12</p>
+            </div>
+            <h2 class="eventtext">Palestra sobre o Meio Ambiente</h2>
+            <p class="eventtext">O evento ocorrerá no teatro amazonas, em Manaus, estaremos recebendo convidados do mundo inteiro, contando presença com diversos cientistas de renome, haverá a ministração de um seminário extensivo a fundo sobre o meio ambiente e sobre os impactos das usinas hidrelétricas na amazônia legal. Dependendo da demanda do evento, podemos planejar uma segunda instância de reunião, em que haveria uma viagem de campo, com o objetivo de visitar diversos pontos importantes para o balanço ecológico da floresta amazônica. </p>
+            <button class="subscribebutton">
+                <a href="inscricao.html">Inscrição</a>
+            </button>
+        </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Doações</h2><hr>
+                </div>
+                <form action="eventos.html">
+                    <div class="modal-body">
+                        <input class="eventinputbox donationinput" name="creditcard-number" placeholder="Número do Cartão" required>
+
+                        <input class="eventinputbox donationinput" name="security-number" type="password" placeholder="Dígitos de Segurança" required>
+
+                        <input class="eventinputbox donationinput" name="valor-doacao" placeholder="Valor da Doação" required>
+                    </div>
+                    <div class="modal-footer">
+                        <hr><button class="donationbutton subscribebutton" type="submit">Enviar Doação</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="../main.js"></script>
+    </main>
+</body>
+</html>

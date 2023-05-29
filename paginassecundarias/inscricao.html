@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="subscriptionbody">
+    <header>
+        <nav>
+           <a href="eventos.html">
+                <img class="arrowicon" src="../images/arrowicon.png">
+           </a>
+        </nav>
+    </header>
+    <main>
+        <section class="subscriptionbox">
+            <h1>Inscrição Para Eventos</h1>
+            <form action="../index.html" method="get">
+                <select class="eventinputbox upperinput eventselectbox" required>
+                    <option value="">Escolha um Evento</option>
+                    <option value="Viagem itapui">Viagem a Itapui - 22/05</option>
+                    <option value="pesquisa">Pesquisa de Eficiência - 14/08</option>
+                    <option value="palestra">Palestra sobre o Meio Ambiente - 09/12</option>
+                </select><br>
+               
+                <input class="eventinputbox upperinput" name="nome" placeholder="Nome Completo" required><br>
+                <input class="eventinputbox upperinput" name="email" type="email" placeholder="E-mail" required><br>
+                <input class="eventinputbox upperinput" name="celular" placeholder="Celular" required><br>
+
+                <p class="belowinputbox">Data de nascimento</p>
+                <input class="eventinputbox eventinputdate" type="date" required><br>
+
+                <p class="belowinputbox">Gênero</p>
+        
+                <div class="generoboxindv">
+                    <label class="generolabel" for="masc">Masculino</label>
+                    <input name="genero" type="radio" class="radio-genero" id="masc">
+                </div>
+
+                <div class="generoboxindv">
+                    <label class="generolabel" for="fem">Feminino</label>
+                    <input name="genero" type="radio" class="radio-genero" id="fem">
+                </div>
+
+                <div class="generoboxindv">
+                    <label class="generolabel" for="void">Outro</label>
+                    <input name="genero" type="radio" class="radio-genero" id="void">
+                </div>
+
+                <br>
+                <div class="finalbuttonbox">
+                    <button class="subscribebutton finalbutton" type="submit">Terminar Inscrição</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

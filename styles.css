@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+.imagebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/fundo2.jpg) no-repeat center;
+    height: 623px;
+}
+
+.menu{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10000;
+}
+
+.menu-item{
+    margin: 0px 40px 0px 40px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:active{
+    color: rgba(215, 215, 215, 0.8);
+}
+
+.box{
+    box-sizing: border-box;
+    margin: 40px 0px 0px 0px;
+    font-size: 25px;
+    padding: 50px;
+    width: 1024px;
+    background-color: rgba(215, 215, 215, 0.8);
+    transition: all 0.5s;
+    border: 10px solid transparent;
+    border-radius: 10px;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    border: 10px solid #136497;
+    border-radius: 20px;
+}
+
+.paragraphbox{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center;
+}
+
+.title{
+    color: aliceblue;
+    position: absolute;
+    top: 60%;
+    left: 27%;
+}
+
+.mainarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: inside;
+}
+
+.lastelement{
+    margin-bottom: 100px;
+}
+
+.houseicon{
+    width: 20px;
+    position: relative;
+    margin-right: 100px;
+}
+
+.headquarters{
+    background: url(./images/fundacaoepesquisa.jpg) no-repeat;
+    background-size: cover;
+    width: 1024px;
+    height: 683px;
+    margin: 40px 0px 0px 0px;
+}
+
+.headquarterstext{
+    color: aliceblue;
+    position: relative;
+    top: 600px;
+    left: 80px;
+    font-size: 30px;
+}
+
+.eventtitle{
+    position: absolute;
+    left: 23.33333%;
+    top: 10%;
+}
+
+.event{
+    background-color: rgba(215, 215, 215, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    width: 720px;
+    height: 500px;
+    margin: 5% auto 0 auto; 
+}
+
+.eventimg{
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+.eventtext{
+    text-align: left;
+    margin: 0px 20px 20px 20px;
+}
+
+.eventtopbox{
+    display: flex;
+    align-items: center;
+}
+
+.eventdate{
+    position: relative;
+    left: 8%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.subscribebutton{
+    background-color: rgba(60, 215, 70, 0.6);
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.firstelement{
+    margin-top: 50px;
+}
+
+.firstelementcontact{
+    margin-top: 75px;
+}
+
+.firstelementevent{
+    margin-top: 3px;
+}
+
+.current{
+    margin-top: 10%;
+}
+
+.eventimg.second{
+    width: 500px;
+}
+
+.event.research{
+    height: 535px;
+}
+
+.eventimg.third{
+    width: 67%;
+}
+
+.event.seminary{
+    height: 670px;
+    margin-bottom: 100px;
+}
+
+.arrowicon{
+    width: 5%;
+    position: absolute;
+    left: 13%;
+    top: 2%;
+}
+
+.subscriptionbox{
+    background-color: rgba(215, 215, 215, 0.8);
+    box-sizing: border-box;
+    width: 1024px;
+    margin: 70px auto 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.finalbutton{
+    width: 200px;
+    margin-top: 40px;
+}
+
+.finalbutton:hover{
+    cursor: pointer;
+}
+
+.finalbuttonbox{
+    text-align: center;
+}
+
+.eventinputbox{
+    width: 60vw;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+    font-family: Montserrat, sans-serif;
+    color:  #777;
+}
+
+.upperinput{
+    margin-top: 15px;
+}
+
+.eventselectbox{
+    width: 62.4vw;
+}
+
+.belowinputbox{
+    margin: 20px 0 5px 0;
+}
+
+.radio-genero:checked{
+    accent-color: rgba(10, 10, 10, 0.3);
+}
+
+.radio-genero{
+    margin-right: 60px;
+}
+
+.generolabel{
+    font-size: 14px;
+}
+
+.generoboxindv{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.subscriptionbody{
+    margin-bottom: 100px;
+}
+
+.infoimg1{
+   /* width: 450px;*/
+   width: 95%;
+}
+
+.infoicon{
+    width: 80px;
+    margin: 0 15px 0 30px;
+    float: left;
+}
+
+.infobox{
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.sunbox{
+    height: 760px;
+}
+
+.windbox{
+    height: 685px;
+}
+
+.waterbox{
+    height: 740px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10001; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+/* Add Animation */
+ @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-header {
+    padding:10px 16px;
+    background-color: #FFFFFF;
+}
+  
+.modal-body {
+    padding: 2px 16px;
+}
+  
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #FFFFFF;
+}
+
+.btndec{
+    font-family: Montserrat, sans-serif;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+}
+
+.donationbutton{
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.donationinput{
+    background-color: rgba(215, 215, 215, 0.8);
+    width: 96%;
+    margin-bottom: 15px;
+}
